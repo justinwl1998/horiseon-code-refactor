@@ -6,6 +6,7 @@
 
 body {
     background-color: #d9dcd6;
+    font-size: 16px;
 }
 
 .header {
@@ -43,14 +44,10 @@ body {
     margin-left: 25px;
 }
 
-a {
+/* Anchor tags are only used in the header, so it's best to give them their own CSS selector for the time being */
+.header nav ul li a {
     color: #ffffff;
     text-decoration: none;
-}
-
-/* Applies to all p elements */
-p {
-    font-size: 16px;
 }
 
 .hero {
@@ -85,11 +82,13 @@ p {
 }
 
 .benefits aside {
+    /* All asides in the benefits class get these properties, rather than applying the same one multiple times to different classes*/
     margin-bottom: 32px;
     color: #ffffff;    
 }
 
 .benefits h3 {
+    /* Condensing the CSS properties makes it easier to identify what gets what when put into HTML */
     margin-bottom: 10px;
     text-align: center;
 }
@@ -114,7 +113,6 @@ p {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background-color: #0072bb;
     color: #ffffff;
-
 }
 
 /* Restricts the height of all images of articles in the content section*/
