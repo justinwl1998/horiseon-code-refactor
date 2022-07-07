@@ -27,7 +27,7 @@ header h1 .seo {
 
 
 /* Changed div element references into nav */
-.header nav {
+header nav {
     padding-top: 15px;
     margin-right: 20px;
     float: right;
@@ -35,17 +35,17 @@ header h1 .seo {
     font-size: 20px;
 }
 
-.header nav ul {
+header nav ul {
     list-style-type: none;
 }
 
-.header nav ul li {
+header nav ul li {
     display: inline-block;
     margin-left: 25px;
 }
 
 /* Anchor tags are currently only used in the header, so it's best to give them their own CSS selector for the time being */
-.header nav ul li a {
+header nav ul li a {
     color: #ffffff;
     text-decoration: none;
 }
